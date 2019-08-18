@@ -3,7 +3,7 @@ def prime?(integer)
     return false
   else 
     (2..integer - 1).to_a.all? do |factor|
-    integer % factor !+ 0
+    integer % factor != 0
       end
   end
 end
